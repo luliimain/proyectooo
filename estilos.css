@@ -1,0 +1,70 @@
+main {
+    margin: 100px auto 50px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+img {
+    width: 80%;
+}
+
+.boton {
+    height: 120px;
+    width: 100px;
+    background-color: rgb(255, 253, 117);
+    border-color: rgb(0, 0, 0);
+    box-shadow: 10px 11px 7px;
+
+}
+.btn-bd-primary {
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: var(--bd-violet-bg);
+    --bs-btn-border-color: var(--bd-violet-bg);
+    --bs-btn-hover-color: blue;
+    --bs-btn-hover-bg: #{shade-color($bd-violet, 10%)};
+    --bs-btn-hover-border-color: #{shade-color($bd-violet, 10%)};
+    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: #{shade-color($bd-violet, 20%)};
+    --bs-btn-active-border-color: #{shade-color($bd-violet, 20%)};
+  }
+
+button {
+    height: 30px;
+    width: 70px;
+    font-size: small;
+    font-weight: bold;
+    border:none;
+}
+
+.tabla {
+    background-color: rgb(255, 255, 52);
+    padding: 0 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.notificacion {
+    align-items: center;
+    display: flex;
+    height: 75px;
+    width: 400px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(252, 255, 60);
+    border-radius: 10px;
+    margin-left: 35%;
+    text-align: center;
+}
+@keyframes girar {
+    from {
+        transform: rotateY(180deg);
+    }
+    to {
+        transform: rotateY(0deg);
+    }
+}
+
+.boton.girando {
+    animation: girar 0.5s linear forwards;
+}
